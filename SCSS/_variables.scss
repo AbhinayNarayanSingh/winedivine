@@ -1,0 +1,20 @@
+@mixin flexC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+:root{
+    --formInputWidth: 400px;
+        --cardWidth: 500px;
+
+}
+
+$formInputWidth : var(--formInputWidth);
+
+@media screen and (max-width:520px) {
+    :root{
+        --cardWidth: 400px;
+    }
+};

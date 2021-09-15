@@ -1,0 +1,20 @@
+.orderDetails{
+    flex-direction: column;
+bottom: 0;
+position: absolute;
+padding-bottom: 1rem;
+}
+
+.shippingAddress{
+    p{
+        span{
+            // background-color: khaki;
+            font-size: .85rem !important;
+            text-transform: capitalize;
+            line-height: normal;
+            margin-bottom: 1rem;
+            font-weight: 500 !important;
+            
+        }
+    }
+}

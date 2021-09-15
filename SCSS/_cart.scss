@@ -1,0 +1,146 @@
+.productCard {
+    display: flex;
+    width: var(--cardWidth);
+    background-color: #e3e3e3;
+    margin: 1rem;
+    border-radius: 10px;
+    position: relative;
+
+    .cartProductImg {
+        width: 30%;
+        // height: 200px;
+        padding: 1rem .5rem;
+        
+        @include flexC;
+    
+
+        img {
+            height: 180px;
+        }
+    }
+
+
+    .cartProductDeatils {
+        padding: 1rem;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: .75rem;
+            font-weight: 500;
+            color: #757575;
+            // opacity: .7;
+        }
+
+        h3 {
+
+            color: #4c4c4c;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding-top: .4rem;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: .75rem;
+            padding-top: .5rem;
+
+            color: #868686;
+            font-weight: 500;
+
+            span {
+                font-weight: 700;
+                font-size: .9rem;
+                color: #4c4c4c;
+
+            }
+        }
+
+        .moreDetails {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .delBtn{
+       padding: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+        font-size: 1.5rem;
+        color: #adadad;
+        z-index: 20;
+    }
+    &:hover{
+        .delBtn{
+            display: flex;
+            i:hover{
+                color: #888;
+
+            }
+
+        }
+    }
+}
+.cartContainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    
+    .cartList {
+        margin: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        // width: 30%;
+    }
+    .subtotal{
+
+        width: var(--cardWidth);
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+            
+            span{
+                text-transform: lowercase;
+                font-weight: 500;
+                line-height: normal;
+                font-size: .9rem;
+                }
+        }
+a{
+    background-color: red;
+    padding: 1rem 3rem;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: #4f4f4f;
+    background-color: #adadad;
+    &:hover{
+        background-color: #888;
+        color: white;
+    }
+}
+        .subsubtotal{
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            text-transform: capitalize;
+            p{
+                font-weight: 500;
+                padding: .2rem 0;
+            }
+            .value{
+                text-align: right;
+            }
+        }
+    }
+}
