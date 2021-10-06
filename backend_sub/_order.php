@@ -140,10 +140,8 @@ function orderDeatils(){
 
 // fetch order --- customer point of view
 
-function fetchOrder(){
+// function fetchOrder(){
     //     $userId = userId();
     // $query = "SELECT * FROM `order` WHERE `userId` = '$userId'";
     // $query = mysqli_query($GLOBALS['conn'], $query);
-
-
-}
+// }
